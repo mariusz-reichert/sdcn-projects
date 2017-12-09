@@ -17,8 +17,8 @@ A summary of what I had learned during Self-Driving Car Engineer Nanodegree Prog
     + learned topics:
     + used technologies:
     + implemented projects:
-        1. Extended Kalman Filters
-        2. Unscented Kalman Filters
+        1. [Extended Kalman Filters](https://github.com/mariusz-reichert/sdcn-projects/tree/master/extended-kalman-filters)
+        2. [Unscented Kalman Filters](https://github.com/mariusz-reichert/sdcn-projects/tree/master/unscented-kalman-filters)
         3. Kidnapped Vehicle
         4. PID Controller
         5. Model Predictive Control
