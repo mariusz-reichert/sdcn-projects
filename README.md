@@ -1,4 +1,4 @@
-# Self Driving Car Nanodegree Program Completion Summary
+## Self Driving Car Nanodegree Projects Summary
 
 A summary of what I had learned during Self-Driving Car Engineer Nanodegree Program:
 
@@ -19,9 +19,9 @@ A summary of what I had learned during Self-Driving Car Engineer Nanodegree Prog
     + implemented projects:
         1. [Extended Kalman Filters](https://github.com/mariusz-reichert/sdcn-projects/tree/master/extended-kalman-filters)
         2. [Unscented Kalman Filters](https://github.com/mariusz-reichert/sdcn-projects/tree/master/unscented-kalman-filters)
-        3. Kidnapped Vehicle
-        4. PID Controller
-        5. Model Predictive Control
+        3. [Particle Filter](https://github.com/mariusz-reichert/sdcn-projects/tree/master/particle-filter)
+        4. [PID Controller](https://github.com/mariusz-reichert/sdcn-projects/tree/master/pid-controller)
+        5. [Model Predictive Control](https://github.com/mariusz-reichert/sdcn-projects/tree/master/model-predictive-control)
         
         
 3. Path Planning, Concentrations, and Systems (Term 3)
