@@ -1,6 +1,6 @@
 ## Self Driving Car Nanodegree Projects Summary
 
-Here is a summary of what topics and technology stack I had learned during Self-Driving Car Engineer Nanodegree Program:
+Here is a summary of what topics and technology stack I had learned during [Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013):
 
 1. Computer Vision and Deep Learning (Term 1)
     + topics (including project implementation):
