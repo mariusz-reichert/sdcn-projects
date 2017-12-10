@@ -28,8 +28,8 @@ A summary of what I had learned during Self-Driving Car Engineer Nanodegree Prog
     + learned topics:
     + used technologies:
     + implemented projects:
-        1. Path Planning Project
-        2. Semantic Segmentation
-        3. Programming a Real Self-Driving Car
+        1. [Path Planning](https://github.com/mariusz-reichert/sdcn-projects/tree/master/path-planning)
+        2. [Semantic Segmentation](https://github.com/mariusz-reichert/sdcn-projects/tree/master/semantic-segmentation)
+        3. [System Integration](https://github.com/mariusz-reichert/sdcn-projects/tree/master/system-integration)
 
 
