@@ -178,7 +178,7 @@ def run():
     num_classes = 2
     image_shape = (160, 576)
     data_dir = './data'
-    runs_dir = './runs'
+    runs_dir = './result'
     #
     EPOCHS = 20
     BATCH_SIZE = 7

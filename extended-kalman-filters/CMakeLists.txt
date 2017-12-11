@@ -11,7 +11,7 @@ set(sources
     src/tools.cpp
     src/io.cpp
     src/kalman_filter.cpp
-    src/main-for-simulator.cpp)
+    src/main-for-simulation.cpp)
 
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 

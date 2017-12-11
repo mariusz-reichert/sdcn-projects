@@ -110,8 +110,8 @@ int main(int argc, char* argv[]) {
 			      weight_sum += pf.GetParticles()[i].weight;
 		      }
 
-		      cout << "highest w " << highest_weight << endl;
-		      cout << "average w " << weight_sum/kNUM_PARTICLES << endl;
+		      cout << "highest weight = " << highest_weight << endl;
+		      cout << "average weight = " << weight_sum/kNUM_PARTICLES << endl << endl;
 
           nlohmann::json jsonMsg;
           jsonMsg["best_particle_x"] = pf.GetParticles()[best_particle_idx].x;
