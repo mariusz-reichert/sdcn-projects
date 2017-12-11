@@ -25,7 +25,7 @@ public:
 
   explicit ExtendedKalmanFilter(const Measurement& initial_meas);
 
-  State GetStateEstimation() noexcept { return x_; }
+  const State& GetStateEstimation() noexcept { return x_; }
 
   void Predict(const double dt);
 

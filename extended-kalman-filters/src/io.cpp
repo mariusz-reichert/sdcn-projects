@@ -49,8 +49,11 @@ ostream& operator<<(ostream& outs, const Measurement& m) {
          << m.value(1) << "\t";
   }
   else {
-    const auto xy = tools::ConvertFromPolarToCartesian(m.value(0), 
-                                                       m.value(1));
+    const auto& rho = m.value(0);
+    double phi = m.value(1);
+    tools::NormalizeAngle(phi);
+    const auto xy = tools::ConvertFromPolarToCartesian(rho, 
+                                                       phi);
 
     outs << xy.first << "\t"
          << xy.second << "\t";

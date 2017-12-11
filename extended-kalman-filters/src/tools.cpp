@@ -35,6 +35,12 @@ State CalculateRmse(
 }
 
 
+void NormalizeAngle(double& angle) noexcept {
+  while (angle >  M_PI) angle -= 2.0 * M_PI;
+  while (angle < -M_PI) angle += 2.0 * M_PI;
+}
+
+
 RadarMeasurementMatrix CalculateJacobian(const State& x) {
   const auto& px = x(0);
   const auto& py = x(1);

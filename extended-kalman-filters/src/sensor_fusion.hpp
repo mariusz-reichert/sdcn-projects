@@ -20,20 +20,21 @@ public:
   , previous_timestamp_{initial_meas.timestamp}
   {}
 
-  State GetStateEstimation() noexcept { return ekf_.GetStateEstimation(); }
+  const State& GetStateEstimation() noexcept { return ekf_.GetStateEstimation(); }
 
-  State Process(const Measurement& m) {
-    ekf_.Predict((m.timestamp - previous_timestamp_)/kMICROSECONDS_IN_SECOND);
+  void Process(const Measurement& m) {
+    const auto dt = (m.timestamp - previous_timestamp_)/kMICROSECONDS_IN_SECOND;
 
-    if (m.source == SensorType::kLaser) {
-      ekf_.Udpate(m.value);
+    if (dt > 0.001) {
+      ekf_.Predict(dt);
+      if (m.source == SensorType::kLaser) {
+        ekf_.Udpate(m.value);
+      }
+      else {
+        ekf_.UdpateEkf(m.value);
+      }
+      previous_timestamp_ = m.timestamp;
     }
-    else {
-      ekf_.UdpateEkf(m.value);
-    }
-
-    previous_timestamp_ = m.timestamp;
-    return GetStateEstimation();
   }
 };
 

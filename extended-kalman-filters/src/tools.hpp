@@ -23,6 +23,9 @@ State CalculateRmse(
   const vector<State>& ground_truth);
 
 
+void NormalizeAngle(double& angle) noexcept;
+
+
 RadarMeasurementMatrix CalculateJacobian(const State& x);
 
 

@@ -26,10 +26,15 @@ ExtendedKalmanFilter::ExtendedKalmanFilter(const Measurement& initial_meas)
     x_(1) = initial_meas.value(1);
   }
   else {
-    const auto xy = tools::ConvertFromPolarToCartesian(initial_meas.value(0), 
-                                                       initial_meas.value(1));
+    const auto& rho = initial_meas.value(0);
+    double phi = initial_meas.value(1);
+    tools::NormalizeAngle(phi);
+    const auto& rho_dot = initial_meas.value(2);
+    const auto xy = tools::ConvertFromPolarToCartesian(rho, phi);
     x_(0) = xy.first;
     x_(1) = xy.second;
+    x_(2) = rho_dot * cos(phi);
+    x_(3) = rho_dot * sin(phi);
   }
 }
 
