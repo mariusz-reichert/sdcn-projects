@@ -1,4 +1,4 @@
-## Self Driving Car Nanodegree Projects Summary
+## Self-Driving Car Nanodegree Projects Summary
 
 Here is a summary of what topics and technology stack I had learned during [Self-Driving Car Engineer Nanodegree Program](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013):
 
