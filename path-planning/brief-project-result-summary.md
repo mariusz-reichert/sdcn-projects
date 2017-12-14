@@ -1,0 +1,1 @@
+Built a path planner that navigates a vehicle through traffic on a highway. Used the concepts taught in the module - environmental prediction, behavioral planning, and trajectory generation - to build the planner.

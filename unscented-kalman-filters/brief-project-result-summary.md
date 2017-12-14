@@ -1,0 +1,1 @@
+Implemented an Unscented Kalman Filter algorithm in C++ capable of accurately and effectively tracking a turning object.
